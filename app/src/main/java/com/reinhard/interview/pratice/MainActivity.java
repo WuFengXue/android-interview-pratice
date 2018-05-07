@@ -1,9 +1,10 @@
 package com.reinhard.interview.pratice;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
+import com.reinhard.interview.pratice.event.EventActivity;
 import com.reinhard.interview.pratice.measure.LinearActivity;
 import com.reinhard.interview.pratice.measure.RelativeActivity;
 
@@ -13,8 +14,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        goMeasure();
+//        goMeasure();
 //        goLinear();
+        goEvent();
     }
 
     void goMeasure() {
@@ -24,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     void goLinear() {
         Intent intent = new Intent(this, LinearActivity.class);
+        startActivity(intent);
+    }
+
+    void goEvent() {
+        Intent intent = new Intent(this, EventActivity.class);
         startActivity(intent);
     }
 }

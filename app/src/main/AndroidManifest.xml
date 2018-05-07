@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".measure.RelativeActivity" />
-        <activity android:name=".measure.LinearActivity"></activity>
+        <activity android:name=".measure.LinearActivity" />
+        <activity android:name=".event.EventActivity" />
     </application>
 
 </manifest>

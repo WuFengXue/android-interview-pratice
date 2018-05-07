@@ -1,7 +1,7 @@
 package com.reinhard.interview.pratice.measure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.reinhard.interview.pratice.R;
 
