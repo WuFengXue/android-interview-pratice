@@ -14,10 +14,13 @@ import hugo.weaving.DebugLog;
  * @date 17/5/18
  */
 @DebugLog
-public class MyView extends View implements View.OnTouchListener {
+public class MyView extends View implements View.OnTouchListener,
+        View.OnClickListener, View.OnLongClickListener {
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setOnTouchListener(this);
+        setOnClickListener(this);
+        setOnLongClickListener(this);
     }
 
     @Override
@@ -35,4 +38,13 @@ public class MyView extends View implements View.OnTouchListener {
         return false;
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        return false;
+    }
 }
